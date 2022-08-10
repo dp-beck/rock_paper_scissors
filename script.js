@@ -7,7 +7,15 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    return window.prompt("rock, paper, or scissors?").toLowerCase();
+    let playerChoice;
+    while (true) {
+        playerChoice = window.prompt("rock, paper, or scissors?").toLowerCase();
+        if (playerChoice === "rock" || playerChoice === "paper" || playerChoice === "scissors") {
+            break;
+        }
+        alert('Your choice is invalid. Please type either "rock," "paper," or "scissors."');
+    }
+    return playerChoice;
 }
 
 function recordRoundWinner (playerChoice, computerChoice) {

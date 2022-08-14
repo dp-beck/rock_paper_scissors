@@ -3,6 +3,4 @@ This is a simple implementation of the game Rock, Paper, Scissors in javascript.
 
 The GUI has three buttons to record the player's choice and to play the round. Further, the GUI will show the score and announce who won.
 
-TO DO: Add Styling
-
 
